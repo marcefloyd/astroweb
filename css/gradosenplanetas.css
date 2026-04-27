@@ -807,3 +807,116 @@ select:hover {
     padding: 15px;
   }
 }
+
+
+/* PORTAL MISTICO */
+.portal-link{
+position:relative;
+display:inline-block;
+
+padding:16px 42px;
+border-radius:60px;
+
+text-decoration:none;
+font-weight:700;
+letter-spacing:2px;
+font-size:1.1rem;
+
+color:#ffd76e;
+
+background:rgba(255,215,110,.08);
+border:1px solid rgba(255,215,110,.45);
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 0 20px rgba(255,215,110,.25),
+inset 0 0 12px rgba(255,230,170,.08);
+
+text-shadow:
+0 0 8px #fff6d0,
+0 0 20px #ffd76e;
+
+overflow:hidden;
+
+transition:.45s ease;
+
+animation:portalPulse 4s infinite;
+}
+
+
+/* aro energético girando */
+.portal-link::before{
+content:"";
+
+position:absolute;
+inset:-8px;
+
+border-radius:70px;
+border:1px solid rgba(255,220,130,.35);
+
+animation:portalSpin 10s linear infinite;
+
+opacity:.55;
+}
+
+
+/* brillo interno */
+.portal-link::after{
+content:"✦";
+
+position:absolute;
+right:22px;
+top:50%;
+transform:translateY(-50%);
+
+font-size:1rem;
+opacity:.8;
+
+animation:portalPulse 2.5s infinite;
+}
+
+
+/* hover mágico */
+.portal-link:hover{
+transform:
+translateY(-4px)
+scale(1.05);
+
+letter-spacing:4px;
+
+background:rgba(255,215,110,.15);
+
+box-shadow:
+0 0 35px rgba(255,215,110,.75),
+0 0 80px rgba(255,180,50,.55);
+
+text-shadow:
+0 0 10px #fff,
+0 0 20px #ffd76e,
+0 0 35px #ffcc66;
+}
+
+.portal-link:hover::before{
+opacity:.9;
+}
+
+
+/* animaciones */
+@keyframes portalSpin{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+
+@keyframes portalPulse{
+0%,100%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.03);
+}
+}

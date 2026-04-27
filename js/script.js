@@ -21,7 +21,11 @@ async function cargarGrados() {
       ...g,
 
       grado: Number(g.grado),
-      signo: (g.signo || "").toLowerCase().trim(),
+      signo: (g.signo || "")
+  .toLowerCase()
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g,"")
+  .trim(),
 
       palabras_clave: Array.isArray(g.palabras_clave) ? g.palabras_clave : [],
       simbolos_clave: Array.isArray(g.simbolos_clave) ? g.simbolos_clave : [],
@@ -146,15 +150,32 @@ function renderResultado(resultado) {
   const arr = (v) => Array.isArray(v) ? v.join(", ") : safe(v);
 
   const objToHTML = (obj) => {
-    if (!obj || typeof obj !== "object") return "Sin datos";
 
-    return Object.entries(obj)
-      .map(([k, v]) => {
-        if (Array.isArray(v)) v = v.join(", ");
-        return `<b>${k}:</b> ${v}`;
-      })
-      .join("<br>");
-  };
+if (!obj) return "Sin datos";
+
+/* si es texto simple */
+if (typeof obj === "string"){
+return obj;
+}
+
+/* si es array */
+if (Array.isArray(obj)){
+return obj.join(", ");
+}
+
+/* si es objeto */
+return Object.entries(obj)
+.map(([k,v])=>{
+
+if(Array.isArray(v)){
+v = v.join(", ");
+}
+
+return `<b>${k}:</b> ${v}`;
+})
+.join("<br>");
+
+};
 
   output.innerHTML = `
     <h2>${safe(resultado.titulo)}</h2>
@@ -196,10 +217,28 @@ function renderResultado(resultado) {
     <hr>
 
     <h3>📊 Campos extra</h3>
-    <p><b>Energía:</b> ${safe(resultado.energia)}</p>
-    <p><b>Emoción:</b> ${safe(resultado.emocion)}</p>
-    <p><b>Mente:</b> ${safe(resultado.mente)}</p>
-    <p><b>Relaciones:</b> ${safe(resultado.relaciones)}</p>
+    <h3>📊 Energía</h3>
+${objToHTML(resultado.energia)}
+
+<hr>
+
+<h3>💧 Emoción</h3>
+${objToHTML(resultado.emocion)}
+
+<hr>
+
+<h3>🧠 Mente</h3>
+${objToHTML(resultado.mente)}
+
+<hr>
+
+<h3>❤️ Relaciones</h3>
+${objToHTML(resultado.relaciones)}
+
+<hr>
+
+<h3>🜁 Cuerpo / Manifestación</h3>
+${objToHTML(resultado.cuerpo_manifestacion)}
 
     <hr>
 
