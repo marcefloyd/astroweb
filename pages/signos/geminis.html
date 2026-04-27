@@ -459,9 +459,14 @@ Mi curiosidad expande conciencia.
 <script>
 new Swiper('.zodiacSwiper',{
 effect:'slide',
-speed:1100,
+speed:900,
+
 mousewheel:true,
 keyboard:true,
+
+observer:true,
+observeParents:true,
+autoHeight:true,
 
 pagination:{
 el:'.swiper-pagination',
@@ -471,8 +476,12 @@ clickable:true
 navigation:{
 nextEl:'.swiper-button-next',
 prevEl:'.swiper-button-prev'
-}
-})
+},
+
+touchRatio:1,
+simulateTouch:true,
+grabCursor:true
+});
 </script>
 
 </body>

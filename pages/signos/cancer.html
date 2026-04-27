@@ -557,12 +557,15 @@ pasar del control al sentir.
 
 <script>
 new Swiper('.zodiacSwiper',{
-effect:'coverflow',
-centeredSlides:true,
-speed:1200,
-slidesPerView:1,
+effect:'slide',
+speed:900,
+
 mousewheel:true,
 keyboard:true,
+
+observer:true,
+observeParents:true,
+autoHeight:true,
 
 pagination:{
 el:'.swiper-pagination',
@@ -572,10 +575,12 @@ clickable:true
 navigation:{
 nextEl:'.swiper-button-next',
 prevEl:'.swiper-button-prev'
-}
+},
+
+touchRatio:1,
+simulateTouch:true,
+grabCursor:true
 });
-
 </script>
-
 </body>
 </html>

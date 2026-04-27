@@ -293,15 +293,30 @@ Mi mente es cielo abierto.
 
 <script>
 new Swiper('.zodiacSwiper',{
-speed:1100,
+effect:'slide',
+speed:900,
+
 mousewheel:true,
 keyboard:true,
-pagination:{el:'.swiper-pagination',clickable:true},
+
+observer:true,
+observeParents:true,
+autoHeight:true,
+
+pagination:{
+el:'.swiper-pagination',
+clickable:true
+},
+
 navigation:{
 nextEl:'.swiper-button-next',
 prevEl:'.swiper-button-prev'
-}
-})
+},
+
+touchRatio:1,
+simulateTouch:true,
+grabCursor:true
+});
 </script>
 
 </body>

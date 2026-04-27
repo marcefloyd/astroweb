@@ -89,10 +89,6 @@ padding:50px;
 }
 
 /* solo slide activa visible */
-.swiper-slide:not(.swiper-slide-active){
-opacity:0 !important;
-pointer-events:none;
-}
 
 
 /* ---------------- CARD ---------------- */
@@ -306,6 +302,45 @@ scrollbar-width:none;
 
 .slide-card::-webkit-scrollbar{
 display:none;
+}
+
+}
+/* MOBILE SWIPER FIX */
+@media (max-width:768px){
+
+.swiper{
+height:100dvh;
+}
+
+.swiper-wrapper{
+align-items:center;
+}
+
+.swiper-slide{
+padding:18px;
+opacity:1 !important;
+visibility:visible !important;
+}
+
+.slide-card{
+width:94vw;
+max-height:78dvh;
+overflow-y:auto;
+padding:28px 22px;
+}
+
+h2{
+font-size:1.8rem;
+}
+
+p,li{
+font-size:1rem;
+line-height:1.6;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+transform:scale(.65);
 }
 
 }
