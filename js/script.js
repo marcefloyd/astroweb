@@ -253,3 +253,17 @@ ${objToHTML(resultado.cuerpo_manifestacion)}
     </p>
   `;
 }
+// ===============================
+// 📱 CONTROLADOR DEL MENÚ HAMBURGUESA
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  if (menuToggle && menu) {
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menu.classList.toggle('activo');
+    });
+  }
+});

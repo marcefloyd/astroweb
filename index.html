@@ -9,10 +9,6 @@
 
   <link rel="stylesheet" href="/css/gradosenplanetas.css">
   <link rel="stylesheet" href="/css/elementos.css"> 
- 
-
-  
-  
 </head>
 
 <body>
@@ -21,9 +17,10 @@
   <canvas id="estrellas"></canvas>
 
   <!-- 🎥 VIDEO -->
-  <video autoplay muted loop id="fondo-video">
+  <video autoplay muted loop playsinline preload="auto" id="fondo-video">
     <source src="assets/sky.mp4" type="video/mp4">
-  </video>
+    Tu navegador no soporta videos de fondo.
+</video>
 
   <!-- 🔝 NAVBAR -->
   <header class="navbar">
@@ -35,151 +32,52 @@
 
 <nav class="menu" id="menu">
   <div class="menu-contenido">
+    
+    <!-- ❌ Botón para cerrar (opcional pero recomendado) -->
+    <div class="menu-cerrar" id="menu-cerrar">&times;</div>
 
-    <!-- 🔮 SIGNOS -->
-    <h3>Signos</h3>
-
-    <!-- 🔥 ARIES -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/aries.html">Aries ♈︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/aries.html">Ver Aries</a></li>
-        <li><a href="pages/grados/grado22aries.html">Grado 22°</a></li>
-        <li><a href="pages/grados/grado23aries.html">Grado 23°</a></li>
-        <li><a href="pages/grados/grado24aries.html">Grado 24°</a></li>
-        <li><a href="pages/grados/grado25aries.html">Grado 25°</a></li>
-        <li><a href="pages/grados/grado26aries.html">Grado 26°</a></li>
-        <li><a href="pages/grados/grado27aries.html">Grado 27°</a></li>
-        <li><a href="pages/grados/grado28aries.html">Grado 28°</a></li>
-        <li><a href="pages/grados/grado29aries.html">Grado 29°</a></li>
-        <li><a href="pages/grados/grado30aries.html">Grado 30°</a></li>
-      </ul>
+    <!-- 🌟 COLUMNA 1: NAVEGACIÓN -->
+    <div class="columna-menu">
+      <h3>Navegación</h3>
+      <a href="/pages/acerca.html">Acerca de Vibrando Acuario</a>
+      <a href="/pages/contacto.html">Contacto</a>
     </div>
 
-    <!-- 🌱 TAURO -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/tauro.html">Tauro ♉︎</a><span class="flecha">▼</span>
+    <!-- 🔮 COLUMNA 2: SIGNOS -->
+    <div class="columna-menu">
+      <h3>Signos</h3>
+      <div class="lista-enlaces">
+        <a href="pages/signos/aries.html">Aries ♈︎</a>
+        <a href="pages/signos/tauro.html">Tauro ♉︎</a>
+        <a href="pages/signos/geminis.html">Géminis ♊︎</a>
+        <a href="pages/signos/cancer.html">Cáncer ♋︎</a>
+        <a href="pages/signos/leo.html">Leo ♌︎</a>
+        <a href="pages/signos/virgo.html">Virgo ♍︎</a>
+        <a href="pages/signos/libra.html">Libra ♎︎</a>
+        <a href="pages/signos/escorpio.html">Escorpio ♏︎</a>
+        <a href="pages/signos/sagitario.html">Sagitario ♐︎</a>
+        <a href="pages/signos/capricornio.html">Capricornio ♑︎</a>
+        <a href="pages/signos/acuario.html">Acuario ♒︎</a>
+        <a href="pages/signos/piscis.html">Piscis ♓︎</a>
       </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/tauro.html">Ver Tauro</a></li>
-      </ul>
     </div>
 
-    <!-- 🌬 GÉMINIS -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/geminis.html">Géminis ♊︎</a><span class="flecha">▼</span>
+    <!-- 🪐 COLUMNA 3: PLANETAS -->
+    <div class="columna-menu">
+      <h3>Planetas</h3>
+      <div class="lista-enlaces">
+        <a href="pages/planetas/sol.html">Sol ☉</a>
+        <a href="pages/planetas/luna.html">Luna ☽</a>
+        <a href="pages/planetas/mercurio.html">Mercurio ☿</a>
+        <a href="pages/planetas/venus.html">Venus ♀</a>
+        <a href="pages/planetas/marte.html">Marte ♂</a>
+        <a href="pages/planetas/jupiter.html">Júpiter ♃</a>
+        <a href="pages/planetas/saturno.html">Saturno ♄</a>
+        <a href="pages/planetas/urano.html">Urano ♅</a>
+        <a href="pages/planetas/neptuno.html">Neptuno ♆</a>
+        <a href="pages/planetas/pluton.html">Plutón ♇</a>
       </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/geminis.html">Ver Géminis</a></li>
-      </ul>
     </div>
-
-    <!-- 🌊 CÁNCER -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/cancer.html">Cáncer ♋︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/cancer.html">Ver Cáncer</a></li>
-      </ul>
-    </div>
-
-    <!-- 🔥 LEO -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/leo.html">Leo ♌︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/leo.html">Ver Leo</a></li>
-      </ul>
-    </div>
-
-    <!-- 🌱 VIRGO -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/virgo.html">Virgo ♍︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/virgo.html">Ver Virgo</a></li>
-      </ul>
-    </div>
-
-    <!-- ⚖ LIBRA -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/libra.html">Libra ♎︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/libra.html">Ver Libra</a></li>
-      </ul>
-    </div>
-
-    <!-- 🦂 ESCORPIO -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/escorpio.html">Escorpio ♏︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/escorpio.html">Ver Escorpio</a></li>
-      </ul>
-    </div>
-
-    <!-- 🏹 SAGITARIO -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/sagitario.html">Sagitario ♐︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/sagitario.html">Ver Sagitario</a></li>
-      </ul>
-    </div>
-
-    <!-- 🐐 CAPRICORNIO -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/capricornio.html">Capricornio ♑︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/capricornio.html">Ver Capricornio</a></li>
-      </ul>
-    </div>
-
-    <!-- 🌊 ACUARIO -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/acuario.html">Acuario ♒︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/acuario.html">Ver Acuario</a></li>
-      </ul>
-    </div>
-
-    <!-- 🐟 PISCIS -->
-    <div class="menu-item">
-      <div class="menu-titulo">
-        <a href="pages/signos/piscis.html">Piscis ♓︎</a><span class="flecha">▼</span>
-      </div>
-      <ul class="submenu">
-        <li><a href="pages/signos/piscis.html">Ver Piscis</a></li>
-      </ul>
-    </div>
-
-    <!-- 🪐 PLANETAS -->
-    <h3>Planetas</h3>
-    <a href="pages/planetas/sol.html">Sol</a>
-    <a href="pages/planetas/luna.html">Luna</a>
-    <a href="pages/planetas/mercurio.html">Mercurio</a>
-    <a href="pages/planetas/venus.html">Venus</a>
-    <a href="pages/planetas/marte.html">Marte</a>
-    <a href="pages/planetas/jupiter.html">Júpiter</a>
-    <a href="pages/planetas/saturno.html">Saturno</a>
-    <a href="pages/planetas/urano.html">Urano</a>
-    <a href="pages/planetas/neptuno.html">Neptuno</a>
-    <a href="pages/planetas/pluton.html">Plutón</a>
 
   </div>
 </nav>
@@ -235,7 +133,7 @@
 
     <!-- ✨ TÍTULO -->
     <h2 id="gradoSeleccionado">
-      GRADOS    ♈︎♉︎♊︎♋︎♌︎♍︎♎︎♏︎♐︎♑︎♒︎♓︎ 
+      GRADOS     ♈︎♉︎♊︎♋︎♌︎♍︎♎︎♏︎♐︎♑︎♒︎♓︎ 
     </h2>
 
     <!-- 🔮 SELECTORES -->
@@ -369,30 +267,58 @@
   </div>
 </section>
 
-<!-- 🔥 FOOTER -->
-<footer class="footer">
-  <div class="footer-contenido">
-
-    <h2 class="footer-logo">Vibrando Acuario</h2>
-
-    <p class="footer-texto">
-      Explorando los grados del zodiaco y el lenguaje simbólico del cosmos.
-    </p>
-
-   <div class="footer-links">
-<a href="/pages/portal.html" class="portal-link">
-✦ Portal ✦
-</a>
-</div>
-    <p class="footer-copy">
-      © 2026 Vibrando Acuario
-    </p>
-
-  </div>
-</footer>
-
 <!-- JS -->
 <script src="../js/script.js"></script>
+<!-- 🌌 FOOTER ESTILIZADO -->
+<footer class="footer">
+  <div class="footer-contenido-columnas">
+    
+    <!-- 🌟 COLUMNA 1: NAVEGACIÓN -->
+    <div class="columna-menu">
+      <h3>Navegación</h3>
+      <a href="/pages/acerca.html">Acerca de Vibrando Acuario</a>
+      <a href="/pages/contacto.html">Contacto</a>
+    </div>
 
+    <!-- 🔮 COLUMNA 2: SIGNOS -->
+    <div class="columna-menu">
+      <h3>Signos</h3>
+      <div class="lista-enlaces">
+        <a href="pages/signos/aries.html">Aries ♈︎</a>
+        <a href="pages/signos/tauro.html">Tauro ♉︎</a>
+        <a href="pages/signos/geminis.html">Géminis ♊︎</a>
+        <a href="pages/signos/cancer.html">Cáncer ♋︎</a>
+        <a href="pages/signos/leo.html">Leo ♌︎</a>
+        <a href="pages/signos/virgo.html">Virgo ♍︎</a>
+        <a href="pages/signos/libra.html">Libra ♎︎</a>
+        <a href="pages/signos/escorpio.html">Escorpio ♏︎</a>
+        <a href="pages/signos/sagitario.html">Sagitario ♐︎</a>
+        <a href="pages/signos/capricornio.html">Capricornio ♑︎</a>
+        <a href="pages/signos/acuario.html">Acuario ♒︎</a>
+        <a href="pages/signos/piscis.html">Piscis ♓︎</a>
+      </div>
+    </div>
+
+    <!-- 🪐 COLUMNA 3: CONTACTO Y REDES -->
+    <div class="columna-menu">
+      <h3>Contacto & Redes</h3>
+      <div class="lista-enlaces">
+  <!-- Enlace para celular (abre la app de correo nativa) -->
+<a href="mailto:vibrandoacuario@gmail.com" class="link-celular">✉️ vibrandoacuario@gmail.com</a>
+
+<!-- Enlace para computadora (abre Gmail en el navegador) -->
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=vibrandoacuario@gmail.com" target="_blank" rel="noopener noreferrer" class="link-pc">✉️ vibrandoacuario@gmail.com</a>
+        <a href="https://instagram.com/vibrando.acuario" target="_blank" rel="noopener noreferrer">📷 Instagram: @vibrando.acuario</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright inferior -->
+  <div class="footer-copy">
+    <p>© 2026 Vibrando Acuario - Todos los derechos reservados.</p>
+  </div>
+</footer>
 </body>
+
 </html>

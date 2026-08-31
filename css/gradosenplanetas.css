@@ -18,7 +18,9 @@
 }
 
 html, body {
-  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* 🔥 BODY */
@@ -275,13 +277,54 @@ body {
   to   { transform: rotate(360deg); }
 }
 
-/* FOOTER */
+/* =========================
+   🌌 FOOTER DEFINITIVO EN FILA
+========================= */
 .footer {
   margin-top: auto;
   width: 100%;
-  padding: 60px 20px 30px;
-  background: linear-gradient(to top, #000000, transparent);
+  background: rgba(8, 8, 12, 0.95);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 50px 20px 20px 20px;
+  box-sizing: border-box;
+}
+
+.footer-contenido-columnas {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-contenido-columnas .columna-menu {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.footer-copy {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
+  color: #888888;
+  font-size: 0.85rem;
+}
+/* 🔮 ESTILO COMPACTO EN 2 COLUMNAS PARA LOS SIGNOS EN EL FOOTER */
+.footer .columna-menu:nth-child(2) .lista-enlaces {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 15px;
 }
 
 /* 🔥 RESPONSIVE */
@@ -304,66 +347,12 @@ body {
   .icono-planeta {
     font-size: var(--planeta-mobile);
   }
-  /* 🔥 BOTÓN HAMBURGUESA */
-.menu-toggle {
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 100;
-}
 
-/* 🔥 MENÚ */
-.menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 260px;
-  height: 100vh;
-
-  background: rgba(0,0,0,0.95);
-  backdrop-filter: blur(10px);
-
-  transition: 0.4s ease;
-  z-index: 99;
-
-  padding: 80px 20px;
-
-  /* 🔥 CLAVE */
-  overflow-y: auto;
-}
-
-/* ACTIVO */
-.menu.activo {
-  right: 0;
-}
-
-/* CONTENIDO */
-.menu-contenido {
+/* Grilla interna para los signos y planetas en columnas compactas */
+.lista-enlaces {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.menu h3 {
-  margin-top: 20px;
-  color: #ffd79b;
-}
-
-.menu a {
-  color: #ccc;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.menu a:hover {
-  color: white;
-  text-shadow: 0 0 10px white;
-}
-
-/* 🔥 CONTENEDOR TITULO (SIGNO + FLECHA) */
-.menu-titulo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 /* 🔥 FLECHA */
@@ -391,7 +380,7 @@ body {
   display: block;
 }
 
-/* 🔥 ITEMS */
+/* 🔥 ITEMS */ 
 .submenu li {
   list-style: none;
 }
@@ -900,7 +889,93 @@ text-shadow:
 .portal-link:hover::before{
 opacity:.9;
 }
+/* 🌌 MENÚ TIPO CORTINA SUPERIOR CORREGIDO */
+.menu {
+  position: fixed;
+  top: -100vh !important; /* Forzamos que suba fuera de la pantalla */
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(8, 8, 12, 0.96);
+  backdrop-filter: blur(15px);
+  z-index: 2000;
+  transition: top 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  overflow-y: auto;
+  padding: 100px 40px 40px 40px;
+  box-sizing: border-box;
+  visibility: hidden; /* Se oculta por completo al iniciar */
+  opacity: 0;
+}
 
+/* CLASE QUE ACTIVA LA CORTINA */
+.menu.activo {
+  top: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Contenedor en columnas ordenadas */
+.menu-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+  position: relative;
+}
+
+/* Estilo de cada columna */
+.columna-menu {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columna-menu h3 {
+  color: #ffdf00;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.columna-menu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s, transform 0.2s;
+  padding: 4px 0;
+}
+
+.columna-menu a:hover {
+  color: #ff4d4d;
+  transform: translateX(5px);
+}
+
+.lista-enlaces {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+/* ☰ BOTÓN DE MENÚ FIJO ARRIBA A LA DERECHA */
+.menu-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 28px;
+  color: #ffd79b;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  user-select: none;
+}
 
 /* animaciones */
 @keyframes portalSpin{
@@ -919,4 +994,21 @@ transform:scale(1);
 50%{
 transform:scale(1.03);
 }
+}
+/* Por defecto en PC: mostramos el de web y ocultamos el de celu */
+.link-celular {
+  display: none;
+}
+.link-pc {
+  display: inline; /* o block según cómo lo tengas estructurado */
+}
+
+/* En celulares (pantallas menores a 768px): invertimos */
+@media (max-width: 768px) {
+  .link-celular {
+    display: inline;
+  }
+  .link-pc {
+    display: none;
+  }
 }

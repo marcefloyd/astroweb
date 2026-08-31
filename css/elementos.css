@@ -1,38 +1,58 @@
-/* 🌍 CONTENEDOR GENERAL */
+/* =========================
+   🌍 1. CONTENEDOR GENERAL Y VIDEO
+========================= */
 .contenido {
- max-width:1100px;
-width:min(92vw,1100px);
-
-padding:90px;
-
-min-height:70vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
+  max-width: 1100px;
+  width: min(92vw, 1100px);
+  padding: 90px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+#fondo-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.volver {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  z-index: 20;
+}
+/* Grilla interna para los signos y planetas en columnas compactas */
+.lista-enlaces {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+/* =========================
+   🔥 2. ELEMENTOS (FUEGO, TIERRA, AIRE, AGUA)
+========================= */
 /* 🔥 FUEGO */
 .fuego .titulo {
   color: #ff4500;
-  text-shadow:
-    0 0 10px #ff4500,
-    0 0 20px #ff0000,
-    0 0 40px #ff8c00;
+  text-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000, 0 0 40px #ff8c00;
 }
-
 .fuego .titulo:hover {
-  text-shadow:
-    0 0 15px #ff4500,
-    0 0 30px #ff0000,
-    0 0 60px #ffa500;
+  text-shadow: 0 0 15px #ff4500, 0 0 30px #ff0000, 0 0 60px #ffa500;
 }
-
 .fuego .descripcion {
   color: #ffe4e1;
   margin-top: 15px;
   line-height: 1.6;
 }
-
 .fuego .datos {
   margin-top: 25px;
   background: rgba(255, 69, 0, 0.25);
@@ -47,20 +67,14 @@ justify-content:center;
   color: #6b8e23;
   text-shadow: 0 0 15px #3b5323, 0 0 30px #2f4f2f;
 }
-
 .tierra .titulo:hover {
-  text-shadow:
-    0 0 10px #6b8e23,
-    0 0 20px #3b5323,
-    0 0 40px #2f4f2f;
+  text-shadow: 0 0 10px #6b8e23, 0 0 20px #3b5323, 0 0 40px #2f4f2f;
 }
-
 .tierra .descripcion {
   color: #e8f5e9;
   margin-top: 15px;
   line-height: 1.6;
 }
-
 .tierra .datos {
   margin-top: 25px;
   background: rgba(50, 80, 50, 0.4);
@@ -72,25 +86,16 @@ justify-content:center;
 /* 🌬️ AIRE */
 .aire .titulo {
   color: #7df9ff;
-  text-shadow:
-    0 0 10px #7df9ff,
-    0 0 20px #00e5ff,
-    0 0 40px #00bcd4;
+  text-shadow: 0 0 10px #7df9ff, 0 0 20px #00e5ff, 0 0 40px #00bcd4;
 }
-
 .aire .titulo:hover {
-  text-shadow:
-    0 0 15px #7df9ff,
-    0 0 30px #00e5ff,
-    0 0 60px #00bcd4;
+  text-shadow: 0 0 15px #7df9ff, 0 0 30px #00e5ff, 0 0 60px #00bcd4;
 }
-
 .aire .descripcion {
   color: #e0f7fa;
   margin-top: 15px;
   line-height: 1.6;
 }
-
 .aire .datos {
   margin-top: 25px;
   background: rgba(0, 188, 212, 0.2);
@@ -103,25 +108,16 @@ justify-content:center;
 /* 💧 AGUA */
 .agua .titulo {
   color: #4da6ff;
-  text-shadow:
-    0 0 10px #4da6ff,
-    0 0 20px #0066ff,
-    0 0 40px #0000ff;
+  text-shadow: 0 0 10px #4da6ff, 0 0 20px #0066ff, 0 0 40px #0000ff;
 }
-
 .agua .titulo:hover {
-  text-shadow:
-    0 0 15px #4da6ff,
-    0 0 30px #0066ff,
-    0 0 60px #00ccff;
+  text-shadow: 0 0 15px #4da6ff, 0 0 30px #0066ff, 0 0 60px #00ccff;
 }
-
 .agua .descripcion {
   color: #d6ecff;
   margin-top: 15px;
   line-height: 1.6;
 }
-
 .agua .datos {
   margin-top: 25px;
   background: rgba(0, 102, 204, 0.25);
@@ -130,29 +126,125 @@ justify-content:center;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 30px rgba(0, 102, 255, 0.4);
 }
-/* =========================
-   SECCIONES GENERALES
-   (contenido de los signos)
-========================= */
 
+
+/* =========================
+   🔮 3. SECCIONES GENERALES Y TARJETAS
+========================= */
 .seccion {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .seccion h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .frase {
-    text-align: center;
-    font-style: italic;
-    font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
 }
 
-/* 📱 RESPONSIVE */
-@media (max-width: 768px) {
+.extra, .compatibilidad {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
 
+.extra h2,
+.compatibilidad h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+/* =========================
+   🔢 4. GRID DE GRADOS Y BOTONES
+========================= */
+.grid-grados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.grid-grados button {
+  background: #111;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.grid-grados button:hover {
+  background: #ff4d4d;
+  transform: scale(1.1);
+}
+
+#resultadoIA {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   🌌 5. FOOTER ESTILIZADO (NUEVO)
+========================= */
+.footer {
+  background: rgba(10, 10, 15, 0.85); /* Fondo oscuro translúcido acorde al video */
+  backdrop-filter: blur(10px);         /* Efecto vidrio esmerilado */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria elegante */
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin-top: 60px;
+}
+
+.footer-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffdf00; /* Tono dorado/estelar para el logo del footer */
+  margin: 0;
+}
+
+.footer-texto {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-copy {
+  color: #666666;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+
+/* =========================
+   📱 6. RESPONSIVE Y MEDIA QUERIES
+========================= */
+@media (max-width: 768px) {
   .contenido {
     max-width: 90%;
     margin: 110px auto 0 auto;
@@ -174,11 +266,21 @@ justify-content:center;
     border-radius: 10px;
   }
 
+  #resultadoIA {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #resultadoIA h2 {
+    font-size: 20px;
+  }
+
+  #resultadoIA h3 {
+    font-size: 16px;
+  }
 }
 
-/* 📱 EXTRA CHICO (celus más pequeños) */
 @media (max-width: 480px) {
-
   .contenido {
     margin-top: 100px;
     padding: 10px;
@@ -195,97 +297,5 @@ justify-content:center;
   .datos {
     padding: 12px;
     font-size: 13px;
-  }
-
-}
-.extra, .compatibilidad {
-  margin-top: 30px;
-  padding: 20px;
-  border-radius: 15px;
-
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-
-  box-shadow: 0 0 15px rgba(255,255,255,0.1);
-}
-
-.extra h2,
-.compatibilidad h2 {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-.volver {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  color: white;
-  text-decoration: none;
-  z-index: 20;
-}
-
-
-#fondo-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-.grid-grados {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.grid-grados button {
-  background: #111;
-  color: white;
-  border: 1px solid #555;
-  padding: 10px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.grid-grados button:hover {
-  background: #ff4d4d;
-  transform: scale(1.1);
-}
-.grid-grados {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-}
-
-.grid-grados button {
-  padding: 8px 12px;
-  font-size: 14px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-#resultadoIA {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  #resultadoIA {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  #resultadoIA h2 {
-    font-size: 20px;
-  }
-
-  #resultadoIA h3 {
-    font-size: 16px;
   }
 }
