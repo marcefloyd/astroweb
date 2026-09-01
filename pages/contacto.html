@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Vibrando Acuario</title>
+
+    <link rel="icon" href="../assets/zodiaco.png">
+
+    <!-- CSS Propios -->
+    <link rel="stylesheet" href="../css/gradosenplanetas.css">
+    <link rel="stylesheet" href="../css/elementos.css"> 
+    
+<!-- 🌐 Bootstrap Icons (Agregá esta línea acá) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+    <style>
+        body {
+            background-color: #050508;
+            color: #ffffff;
+            margin: 0;
+            padding-top: 100px;
+        }
+
+        .contacto-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .contacto-titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contacto-titulo h1 {
+            color: #ffe680;
+            text-shadow: 0 0 10px #ffcc00;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contacto-titulo p {
+            color: #cfcfcf;
+            font-size: 1.1rem;
+        }
+
+        .tarjetas-contacto {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .tarjeta-item {
+            background: rgba(15, 15, 25, 0.85);
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .tarjeta-item:hover {
+            transform: translateY(-5px);
+            border-color: #ffcc00;
+        }
+
+        .tarjeta-icono {
+            font-size: 2.5rem;
+            color: #ffcc00;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .tarjeta-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .tarjeta-item p {
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+
+        .btn-contacto {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #050508;
+            font-weight: 700;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-contacto:hover {
+            background-color: #ffd633;
+            color: #000;
+        }
+
+        .btn-contacto-outline {
+            display: inline-block;
+            background: transparent;
+            color: #ffcc00;
+            border: 2px solid #ffcc00;
+            font-weight: 700;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contacto-outline:hover {
+            background-color: #ffcc00;
+            color: #050508;
+        }
+
+        /* Control para correo PC / Celular */
+        .link-celular { display: none; }
+        .link-pc { display: inline-block; }
+        @media (max-width: 768px) {
+            .link-celular { display: inline-block; }
+            .link-pc { display: none; }
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- 🌌 CANVAS --> 
+  <canvas id="estrellas"></canvas>
+
+  <!-- 🎥 VIDEO -->
+  <video autoplay muted loop playsinline preload="auto" id="fondo-video">
+    <source src="../assets/sky.mp4" type="video/mp4">
+    Tu navegador no soporta videos de fondo.
+  </video>
+
+  <!-- 🔝 NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">VIBRANDO ACUARIO</a></h1>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <nav class="menu" id="menu">
+      <div class="menu-contenido">
+        
+        <!-- ❌ Botón para cerrar -->
+        <div class="menu-cerrar" id="menu-cerrar">&times;</div>
+
+        <!-- 🌟 COLUMNA 1: NAVEGACIÓN -->
+        <div class="columna-menu">
+          <h3>Navegación</h3>
+          <a href="../index.html">Inicio</a>
+          <a href="acerca.html">Acerca de Vibrando Acuario</a>
+          <a href="contacto.html">Contacto</a>
+           <a href="/pages/presupuesto.html">Presupuesto</a>
+        </div>
+
+        <!-- 🔮 COLUMNA 2: SIGNOS -->
+        <div class="columna-menu">
+          <h3>Signos</h3>
+          <div class="lista-enlaces">
+            <a href="signos/aries.html">Aries ♈︎</a>
+            <a href="signos/tauro.html">Tauro ♉︎</a>
+            <a href="signos/geminis.html">Géminis ♊︎</a>
+            <a href="signos/cancer.html">Cáncer ♋︎</a>
+            <a href="signos/leo.html">Leo ♌︎</a>
+            <a href="signos/virgo.html">Virgo ♍︎</a>
+            <a href="signos/libra.html">Libra ♎︎</a>
+            <a href="signos/escorpio.html">Escorpio ♏︎</a>
+            <a href="signos/sagitario.html">Sagitario ♐︎</a>
+            <a href="signos/capricornio.html">Capricornio ♑︎</a>
+            <a href="signos/acuario.html">Acuario ♒︎</a>
+            <a href="signos/piscis.html">Piscis ♓︎</a>
+          </div>
+        </div>
+
+        <!-- 🪐 COLUMNA 3: PLANETAS -->
+        <div class="columna-menu">
+          <h3>Planetas</h3>
+          <div class="lista-enlaces">
+            <a href="planetas/sol.html">Sol ☉</a>
+            <a href="planetas/luna.html">Luna ☽</a>
+            <a href="planetas/mercurio.html">Mercurio ☿</a>
+            <a href="planetas/venus.html">Venus ♀</a>
+            <a href="planetas/marte.html">Marte ♂</a>
+            <a href="planetas/jupiter.html">Júpiter ♃</a>
+            <a href="planetas/saturno.html">Saturno ♄</a>
+            <a href="planetas/urano.html">Urano ♅</a>
+            <a href="planetas/neptuno.html">Neptuno ♆</a>
+            <a href="planetas/pluton.html">Plutón ♇</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- 🗂️ CONTENIDO DE CONTACTO -->
+  <main class="contacto-container">
+      <div class="contacto-titulo">
+          <h1>Conectá con Vibrando Acuario</h1>
+          <p>Escribinos por cualquiera de nuestros canales oficiales o consultá presupuestos.</p>
+      </div>
+
+      <div class="tarjetas-contacto">
+          <!-- WhatsApp -->
+          <div class="tarjeta-item">
+              <div class="tarjeta-icono"><i class="bi bi-whatsapp"></i></div>
+              <h3>WhatsApp</h3>
+              <p>Atención directa y rápida para resolver tus consultas astrológicas o web.</p>
+              <a href="https://wa.me/5491134352953" target="_blank" class="btn-contacto">Enviar mensaje</a>
+          </div>
+
+          <!-- Instagram -->
+          <div class="tarjeta-item">
+         <div class="tarjeta-icono"><i class="bi bi-instagram"></i></div>
+              <h3>Instagram</h3>
+              <p>Seguinos para ver contenido diario, novedades y energía en vivo.</p>
+              <a href="https://www.instagram.com/vibrando.acuario" target="_blank" class="btn-contacto-outline">@vibrando.acuario</a>
+          </div>
+
+          <!-- Correo -->
+          <div class="tarjeta-item">
+             <div class="tarjeta-icono"><i class="bi bi-envelope-fill"></i></div>
+              <h3>Correo Electrónico</h3>
+              <p>Envianos un mail detallando lo que necesitás consultar.</p>
+              <a href="mailto:vibrandoacuario@gmail.com" class="link-celular btn-contacto-outline">Enviar mail</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vibrandoacuario@gmail.com" target="_blank" class="link-pc btn-contacto-outline">Enviar mail</a>
+          </div>
+      </div>
+
+      <!-- Sección Presupuesto / Servicios -->
+      <div class="tarjeta-item" style="max-width: 600px; margin: 0 auto;">
+          <h3>¿Querés tu sitio web o cotizar?</h3>
+          <p>Simulá estimaciones y envianos un presupuesto directo a medida.</p>
+          <a href="presupuesto.html" class="btn-contacto" style="margin-top: 10px;">⚡ Armá tu presupuesto</a>
+      </div>
+  </main>
+
+  <!-- 🌌 FOOTER ESTILIZADO -->
+  <footer class="footer">
+    <div class="footer-contenido-columnas">
+      
+      <!-- 🌟 COLUMNA 1: NAVEGACIÓN -->
+      <div class="columna-menu">
+        <h3>Navegación</h3>
+       <a href="../index.html">Inicio</a>
+          <a href="acerca.html">Acerca de Vibrando Acuario</a>
+          <a href="contacto.html">Contacto</a>
+           <a href="/pages/presupuesto.html">Presupuesto</a>
+      </div>
+
+      <!-- 🔮 COLUMNA 2: SIGNOS -->
+      <div class="columna-menu">
+        <h3>Signos</h3>
+        <div class="lista-enlaces">
+          <a href="signos/aries.html">Aries ♈︎</a>
+          <a href="signos/tauro.html">Tauro ♉︎</a>
+          <a href="signos/geminis.html">Géminis ♊︎</a>
+          <a href="signos/cancer.html">Cáncer ♋︎</a>
+          <a href="signos/leo.html">Leo ♌︎</a>
+          <a href="signos/virgo.html">Virgo ♍︎</a>
+          <a href="signos/libra.html">Libra ♎︎</a>
+          <a href="signos/escorpio.html">Escorpio ♏︎</a>
+          <a href="signos/sagitario.html">Sagitario ♐︎</a>
+          <a href="signos/capricornio.html">Capricornio ♑︎</a>
+          <a href="signos/acuario.html">Acuario ♒︎</a>
+          <a href="signos/piscis.html">Piscis ♓︎</a>
+        </div>
+      </div>
+
+      <!-- 🪐 COLUMNA 3: CONTACTO Y REDES -->
+      <div class="columna-menu">
+        <h3>Contacto & Redes</h3>
+       <div class="lista-enlaces d-flex flex-column gap-2">
+    <!-- Correo Celular -->
+    <a href="mailto:vibrandoacuario@gmail.com" class="link-celular text-white text-decoration-none">
+        <i class="bi bi-envelope-fill text-warning me-2"></i> vibrandoacuario@gmail.com
+    </a>
+    <!-- Correo PC -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vibrandoacuario@gmail.com" target="_blank" rel="noopener noreferrer" class="link-pc text-white text-decoration-none">
+        <i class="bi bi-envelope-fill text-warning me-2"></i> vibrandoacuario@gmail.com
+    </a>
+    <!-- Instagram -->
+    <a href="https://instagram.com/vibrando.acuario" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">
+        <i class="bi bi-instagram text-warning me-2"></i> @vibrando.acuario
+    </a>
+</div>
+      </div>
+
+    </div>
+
+    <!-- Copyright inferior -->
+    <div class="footer-copy">
+      <p>© 2026 Vibrando Acuario - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JS Principal Global (Controla el menú y los eventos automáticamente) -->
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
