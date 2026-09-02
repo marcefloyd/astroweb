@@ -1,0 +1,297 @@
+/* ==========================================
+   ESTILOS GENERALES Y RESET FUEGO (ARIES, LEO, SAGITARIO)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent !important;
+    color: #f0f0f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ==========================================
+   VIDEO DE FONDO
+   ========================================== */
+#fondo-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -999;
+    pointer-events: none;
+}
+
+/* ==========================================
+   NAVBAR Y LOGO CENTRADO
+   ========================================== */
+/* ==========================================
+   NAVBAR Y LOGO IDÉNTICO AL INDEX
+   ========================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  z-index: 50;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+    font-size: 28px;
+}
+
+.logo a {
+    color: #ffd79b;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 26px;
+    text-shadow: 
+        0 0 5px #ffd79b,
+        0 0 10px #ffd79b,
+        0 0 20px #eeff00,
+        0 0 40px #eeff00; /* Brillo potente idéntico al index */
+}
+
+.menu-toggle {
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+    color: #ffd79b;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+/* ==========================================
+   MENÚ DESPLEGABLE EN PANTALLA COMPLETA
+   ========================================== */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(5, 5, 8, 0.96);
+    backdrop-filter: blur(15px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.menu.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    width: 90%;
+    position: relative;
+}
+
+.menu-cerrar {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 2.5rem;
+    color: #ffe680;
+    cursor: pointer;
+}
+
+.menu-cerrar:hover {
+    color: #fff;
+}
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL Y TARJETAS (GLASSMORPHISM)
+   ========================================== */
+.signo-container {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 60px;
+}
+
+.simbolo-signo {
+    font-size: 3.5rem;
+    color: #ffaa33;
+    text-shadow: 0 0 20px rgba(255, 136, 0, 0.6);
+}
+
+.titulo-signo {
+    color: #ffcc44;
+    text-shadow: 0 0 15px rgba(255, 170, 0, 0.5);
+    font-family: 'Cinzel', serif, sans-serif;
+    letter-spacing: 2px;
+}
+
+.signo-card {
+    background: rgba(15, 12, 10, 0.85);
+    border: 1px solid rgba(255, 140, 0, 0.35);
+    border-radius: 16px;
+    padding: 30px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 100, 0, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.signo-card:hover {
+    border-color: rgba(255, 170, 0, 0.7);
+    transform: translateY(-3px);
+}
+
+.signo-card h3 {
+    color: #ffbb44;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.signo-card ul {
+    list-style-type: none;
+}
+
+.signo-card ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.signo-card ul li::before {
+    content: "🔥";
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+}
+
+/* Clases de utilidad */
+.lista-dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 30px;
+}
+
+/* ==========================================
+   FOOTER ESTILIZADO
+   ========================================== */
+.footer {
+    background: rgba(5, 5, 8, 0.95);
+    border-top: 1px solid rgba(255, 140, 0, 0.2);
+    padding: 40px 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-contenido-columnas {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.columna-menu h3 {
+    color: #ffcc44;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.3);
+    padding-bottom: 5px;
+}
+
+.columna-menu a {
+    display: block;
+    color: #b0b0ba;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.2s ease;
+}
+
+.columna-menu a:hover {
+    color: #ffcc44;
+}
+
+.footer-copy {
+    text-align: center;
+    color: #707080;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+/* ==========================================
+   📱 MEDIA QUERIES RESPONSIVE
+   ========================================== */
+
+/* Para Tablets y Celulares (menores a 900px) */
+@media (max-width: 900px) {
+    /* El menú de pantalla completa pasa a una sola columna vertical */
+    .menu-contenido {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 20px 0;
+    }
+
+    /* Achicamos un poco el título del navbar en celulares para que no choque */
+    .logo a {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .menu-cerrar {
+        top: -40px;
+        right: 10px;
+    }
+}
+
+/* Para Celulares chicos (menores a 600px) */
+@media (max-width: 600px) {
+    .logo a {
+        font-size: 15px;
+    }
+    
+    .menu-toggle {
+        font-size: 24px;
+        right: 15px;
+        padding: 4px 10px;
+    }
+}

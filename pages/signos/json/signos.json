@@ -1,0 +1,395 @@
+{
+  "Aries": {
+    "signo": "Aries",
+    "elemento": "Fuego",
+    "simbolo": "♈",
+    "cuerpo": "Cabeza, cerebro, cráneo y rostro.",
+    "planeta": "Marte",
+    "casa": "Casa 1",
+    "mitologia": "Representa el vellocino de oro y al carnero alado Crisómalo de la mitología griega, símbolo del heroísmo, la empresa audaz y el sacrificio que abre nuevos caminos.",
+    "positivo": [
+      "Coraje y valentía para iniciar.",
+      "Liderazgo natural y pionero.",
+      "Entusiasmo vital y franqueza."
+    ],
+    "negativo": [
+      "Impulsividad y reactividad.",
+      "Impaciencia extrema.",
+      "Ego competitivo y tendencia a la agresividad."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Energía duplicada, acción y aventura.", "malo": "Choque de egos y competencia constante." },
+      "tauro": { "bueno": "Complemento entre el impulso y la estabilidad.", "malo": "Aries acelera demasiado y Tauro se obstina en frenar." },
+      "geminis": { "bueno": "Dinamismo, mente rápida y estímulo mutuo.", "malo": "Dispersión y falta de profundización." },
+      "cancer": { "bueno": "Aries protege y Cáncer aporta contención emocional.", "malo": "La impulsividad de Aries hiere la hipersensibilidad de Cáncer." },
+      "leo": { "bueno": "Pasión desbordante, liderazgo y fuego noble compartido.", "malo": "Lucha de egos por ver quién brilla más." },
+      "virgo": { "bueno": "Aries aporta la chispa y Virgo la estructura de ejecución.", "malo": "Aries se aburre de la exigencia y Virgo se estresa con el caos." },
+      "libra": { "bueno": "Polaridad complementaria perfecta (el eje del deseo y el otro).", "malo": "Aries es directo y Libra duda demasiado buscando el equilibrio." },
+      "escorpio": { "bueno": "Intensidad y poder de transformación profundo.", "malo": "Choques de poder y rencores acumulados." },
+      "sagitario": { "bueno": "Aventura, expansión, entusiasmo y alegría pura.", "malo": "Exceso de confianza y cero cable a tierra." },
+      "capricornio": { "bueno": "Aries inicia los proyectos y Capricornio los materializa.", "malo": "La impaciencia de Aries choca contra la rigidez de Capricornio." },
+      "acuario": { "bueno": "Innovación, rebeldía y proyectos vanguardistas.", "malo": "Aries busca inmediatez y Acuario se dispersa en el futuro." },
+      "piscis": { "bueno": "Aries le da fuerza y dirección al mundo interno de Piscis.", "malo": "La brusquedad de Aries abruma la sensibilidad pisciana." }
+    }
+  },
+  "Tauro": {
+    "signo": "Tauro",
+    "elemento": "Tierra",
+    "simbolo": "♉",
+    "cuerpo": "Cuello, garganta, cuerdas vocales y tiroides.",
+    "planeta": "Venus",
+    "casa": "Casa 2",
+    "mitologia": "Representa al Toro sagrado de Creta y a la constelación vinculada con la fertilidad de la tierra, la abundancia material y la resistencia inquebrantable.",
+    "positivo": [
+      "Firmeza, estabilidad y confiabilidad.",
+      "Gran paciencia y capacidad de perseverancia.",
+      "Sensibilidad y disfrute de los placeres terrenales y estéticos."
+    ],
+    "negativo": [
+      "Terquedad y resistencia rígida al cambio.",
+      "Tendencia a la posesividad y el apego material.",
+      "Inercia o pereza cuando se sale de su zona de confort."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Complemento entre el impulso de fuego y la solidez de tierra.", "malo": "Aries acelera demasiado y Tauro se obstina en frenar." },
+      "tauro": { "bueno": "Estabilidad absoluta, calma y disfrute compartido.", "malo": "Terquedad doble y estancamiento por falta de iniciativa." },
+      "geminis": { "bueno": "Tauro ancla la dispersión mental de Géminis.", "malo": "Géminis necesita cambios constantes y Tauro busca rutina segura." },
+      "cancer": { "bueno": "Construcción de un hogar seguro, afecto y lealtad profunda.", "malo": "Exceso de apego y encierro en el mundo íntimo." },
+      "leo": { "bueno": "Apreciación mutua por el lujo, el confort y la lealtad.", "malo": "Choque entre la necesidad de brillo de Leo y la tozudez de Tauro." },
+      "virgo": { "bueno": "Excelente alianza práctica, orden y sentido común.", "malo": "Exceso de previsión que puede volver la relación rutinaria." },
+      "libra": { "bueno": "Ambos regidos por Venus: búsqueda de belleza y armonía.", "malo": "Libra duda analíticamente y Tauro se pone terco." },
+      "escorpio": { "bueno": "Eje de la materia y la transformación; atracción magnética.", "malo": "Choque de fuerzas inamovibles y rencores." },
+      "sagitario": { "bueno": "Tauro ofrece refugio y Sagitario aporta expansión y optimismo.", "malo": "Sagitario busca libertad y Tauro busca arraigo." },
+      "capricornio": { "bueno": "Solidez material, metas claras y construcción a largo plazo.", "malo": "Rigidez excesiva y falta de flexibilidad emocional." },
+      "acuario": { "bueno": "Acuario trae visión de futuro y Tauro seguridad terrenal.", "malo": "Acuario rompe esquemas y Tauro detesta los cambios bruscos." },
+      "piscis": { "bueno": "Tauro materializa los sueños y la sensibilidad de Piscis.", "malo": "La lentitud de Tauro puede frustrar la fluidez pisciana." }
+    }
+  
+  },
+  "Geminis": {
+    "signo": "Géminis",
+    "elemento": "Aire",
+    "simbolo": "♊",
+    "cuerpo": "Sistema nervioso, pulmones, brazos, manos y hombros.",
+    "planeta": "Mercurio",
+    "casa": "Casa 3",
+    "mitologia": "Representa a los Dioses Castor y Pólux (los Dioscuros), símbolo de la dualidad, el vínculo entre lo mortal y lo divino, y la curiosidad intelectual eterna.",
+    "positivo": [
+      "Versatilidad, adaptabilidad y agilidad mental.",
+      "Gran capacidad de comunicación y curiosidad insaciable.",
+      "Simpatía, humor y apertura a nuevas ideas."
+    ],
+    "negativo": [
+      "Dispersión y falta de profundidad o constancia.",
+      "Inquietud nerviosa y tendencia a la superficialidad.",
+      "Doble faz o cambios bruscos de humor."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Dinamismo, mente rápida y estímulo mutuo.", "malo": "Dispersión y falta de profundización." },
+      "tauro": { "bueno": "Tauro ancla la dispersión mental de Géminis.", "malo": "Géminis necesita cambios constantes y Tauro busca rutina segura." },
+      "geminis": { "bueno": "Estimulación intelectual infinita, risas y complicidad.", "malo": "Nadie pone cable a tierra; caos y dispersión doble." },
+      "cancer": { "bueno": "Géminis divierte a Cáncer y este le da refugio emocional.", "malo": "La ligereza de Géminis choca con la necesidad de arraigo de Cáncer." },
+      "leo": { "bueno": "Creatividad compartida, alegría y planes sociales brillantes.", "malo": "Leo busca atención constante y Géminis se distrae con facilidad." },
+      "virgo": { "bueno": "Ambos regidos por Mercurio: análisis, agudeza mental y diálogo.", "malo": "Virgo busca precisión metódica y Géminis improvisa sobre la marcha." },
+      "libra": { "bueno": "Conexión de aire perfecta; charlas interminables y buen gusto social.", "malo": "Indecisión compartida y dificultad para concretar en la materia." },
+      "escorpio": { "bueno": "Géminis aporta frescura mental y Escorpio profundidad psicológica.", "malo": "La liviandad de Géminis irrita la intensidad y celos de Escorpio." },
+      "sagitario": { "bueno": "Eje del conocimiento y la aventura; aprendizaje mutuo constante.", "malo": "Sagitario busca verdades absolutas y Géminis relativiza todo." },
+      "capricornio": { "bueno": "Géminis aporta ideas innovadoras y Capricornio estructura.", "malo": "Capricornio ve a Géminis demasiado volátil y poco serio." },
+      "acuario": { "bueno": "Sintonía mental total, originalidad y proyectos vanguardistas.", "malo": "Exceso de mundos abstractos y cero conexión emocional profunda." },
+      "piscis": { "bueno": "Imaginación desbordante y sensibilidad artística conectadas.", "malo": "La lógica de Géminis no entiende el caos emocional de Piscis." }
+    }
+  },"Cancer": {
+    "signo": "Cáncer",
+    "elemento": "Agua",
+    "simbolo": "♋",
+    "cuerpo": "Pecho, mamas, estómago y sistema digestivo.",
+    "planeta": "Luna",
+    "casa": "Casa 4",
+    "mitologia": "Representa al cangrejo gigante enviado por Hera para obstaculizar a Hércules, inmortalizado en el cielo como símbolo de la protección materna, el refugio y la memoria emocional.",
+    "positivo": [
+      "Profunda empatía, intuición y capacidad de contención.",
+      "Lealtad inquebrantable y protección hacia los suyos.",
+      "Fuerte conexión con el hogar, las raíces y la sensibilidad."
+    ],
+    "negativo": [
+      "Hipersensibilidad extrema y tendencia a replegarse en el caparazón.",
+      "Apego excesivo al pasado y nostalgia paralizante.",
+      "Manipulación emocional o cambios de humor repentinos (reflejados en sus fases)."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Aries protege y Cáncer aporta contención emocional.", "malo": "La impulsividad de Aries hiere la hipersensibilidad de Cáncer." },
+      "tauro": { "bueno": "Construcción de un hogar seguro, afecto y lealtad profunda.", "malo": "Exceso de apego y encierro en el mundo íntimo." },
+      "geminis": { "bueno": "Géminis divierte a Cáncer y este le da refugio emocional.", "malo": "La ligereza de Géminis choca con la necesidad de arraigo de Cáncer." },
+      "cancer": { "bueno": "Comprensión absoluta, refugio mutuo y conexión de almas.", "malo": "Drama compartido, encierro y exceso de protección." },
+      "leo": { "bueno": "Leo brinda seguridad pública y Cáncer refugio privado y afectuoso.", "malo": "La demanda de atención de Leo choca con el repliegue de Cáncer." },
+      "virgo": { "bueno": "Cuidado mutuo, practicidad y construcción familiar sólida.", "malo": "Exceso de crítica por parte de Virgo que Cáncer toma como ataque personal." },
+      "libra": { "bueno": "Ambos buscan la paz, la familia y la armonía vincular.", "malo": "Libra es mental y social; Cáncer es visceral y casero." },
+      "escorpio": { "bueno": "Fusión emocional profunda, intimidad y lealtad magnética.", "malo": "Apego intenso, celos y rencores bajo el agua." },
+      "sagitario": { "bueno": "Sagitario trae alegría al hogar y Cáncer le da raíces.", "malo": "Sagitario necesita volar libre y Cáncer busca retenerlo." },
+      "capricornio": { "bueno": "Eje opuesto complementario perfecto: estructura y nutrición.", "malo": "La fría rigidez de Capricornio paraliza el mundo sensible de Cáncer." },
+      "acuario": { "bueno": "Acuario abre la mente de Cáncer a nuevas perspectivas.", "malo": "Acuario es desapegado y Cáncer necesita cercanía constante." },
+      "piscis": { "bueno": "Conexión de agua mágica, intuitiva y sumamente empática.", "malo": "Vivir en una burbuja sin cable a tierra ni límites claros." }
+    }
+  },
+  "Leo": {
+    "signo": "Leo",
+    "elemento": "Fuego",
+    "simbolo": "♌",
+    "cuerpo": "Corazón, columna vertebral, aorta y parte alta de la espalda.",
+    "planeta": "Sol",
+    "casa": "Casa 5",
+    "mitologia": "Representa al León de Nemea, la fiera invulnerable derrotada por Hércules, símbolo del coraje máximo, la realeza interior, el orgullo noble y la luz que irradia desde el centro.",
+    "positivo": [
+      "Generosidad, carisma y liderazgo magnético natural.",
+      "Lealtad incondicional y protección hacia su manada.",
+      "Creatividad desbordante, alegría y entusiasmo vital."
+    ],
+    "negativo": [
+      "Orgullo herido, soberbia y necesidad constante de validación externa.",
+      "Egocentrismo o tendencia a querer acaparar todo el protagonismo.",
+      "Autoritarismo o dramatismo excesivo cuando no se siente admirado."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Pasión desbordante, liderazgo y fuego noble compartido.", "malo": "Lucha de egos por ver quién brilla más." },
+      "tauro": { "bueno": "Apreciación mutua por el lujo, el confort y la lealtad.", "malo": "Choque entre la necesidad de brillo de Leo y la tozudez de Tauro." },
+      "geminis": { "bueno": "Creatividad compartida, alegría y planes sociales brillantes.", "malo": "Leo busca atención constante y Géminis se distrae con facilidad." },
+      "cancer": { "bueno": "Leo brinda seguridad pública y Cáncer refugio privado y afectuoso.", "malo": "La demanda de atención de Leo choca con el repliegue de Cáncer." },
+      "leo": { "bueno": "Espectáculo, brillo mutuo, generosidad y fiesta compartida.", "malo": "Choque de reyes: ninguno quiere ceder el trono." },
+      "virgo": { "bueno": "Leo inspira a Virgo y Virgo organiza con eficiencia el brillo de Leo.", "malo": "Virgo señala los errores de Leo y este se ofende en su orgullo." },
+      "libra": { "bueno": "Elegancia, amor por el arte, vida social y romanticismo puro.", "malo": "Libra analiza demasiado y Leo actúa desde el aplauso." },
+      "escorpio": { "bueno": "Lealtad feroz, magnetismo y pasión intensa.", "malo": "Lucha de poder incesante y orgullo inflexible." },
+      "sagitario": { "bueno": "Aventura, fuego puro, optimismo y diversión sin límites.", "malo": "Exceso de orgullo y cero atención a los detalles prácticos." },
+      "capricornio": { "bueno": "Ambición, metas elevadas y respeto por la autoridad y el estatus.", "malo": "Capricornio es austero y reservado; Leo busca brillo y reconocimiento." },
+      "acuario": { "bueno": "Oposición complementaria magnética: el individuo (Leo) y el colectivo (Acuario).", "malo": "Leo busca ser el centro y Acuario busca la igualdad general." },
+      "piscis": { "bueno": "Leo protege con calidez el mundo imaginativo de Piscis.", "malo": "La vulnerabilidad de Piscis choca con la exigencia de fuerza de Leo." }
+    }
+  },"Virgo": {
+    "signo": "Virgo",
+    "elemento": "Tierra",
+    "simbolo": "♍",
+    "cuerpo": "Sistema nervioso central, intestinos, abdomen y aparato digestivo.",
+    "planeta": "Mercurio",
+    "casa": "Casa 6",
+    "mitologia": "Representa a Astrea, la diosa de la justicia, la inocencia y la pureza, que fue la última de los inmortales en abandonar la Tierra debido a los vicios humanos, convirtiéndose en la constelación de la cosecha y el orden.",
+    "positivo": [
+      "Capacidad analítica impecable, orden y sentido práctico.",
+      "Vocación de servicio, humildad y atención al detalle.",
+      "Confiabilidad, pulcritud y búsqueda constante de mejora."
+    ],
+    "negativo": [
+      "Exceso de autocrítica y perfeccionismo paralizante.",
+      "Tendencia a la crítica excesiva hacia los demás y manía de control.",
+      "Hipocondría o preocupación ansiosa por los detalles menores."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Aries aporta la chispa y Virgo la estructura de ejecución.", "malo": "Aries se aburre de la exigencia y Virgo se estresa con el caos." },
+      "tauro": { "bueno": "Excelente alianza práctica, orden y sentido común.", "malo": "Exceso de previsión que puede volver la relación rutinaria." },
+      "geminis": { "bueno": "Ambos regidos por Mercurio: análisis, agudeza mental y diálogo.", "malo": "Virgo busca precisión metódica y Géminis improvisa sobre la marcha." },
+      "cancer": { "bueno": "Cuidado mutuo, practicidad y construcción familiar sólida.", "malo": "Exceso de crítica por parte de Virgo que Cáncer toma como ataque personal." },
+      "leo": { "bueno": "Leo inspira a Virgo y Virgo organiza con eficiencia el brillo de Leo.", "malo": "Virgo señala los errores de Leo y este se ofende en su orgullo." },
+      "virgo": { "bueno": "Eficiencia máxima, entendimiento mental y orden compartido.", "malo": "Exigencia mutua insoportable y microscopio puesto en los defectos." },
+      "libra": { "bueno": "Ambos buscan la mejora y el refinamiento intelectual.", "malo": "Libra es indeciso y estético; Virgo es metódico y crítico." },
+      "escorpio": { "bueno": "Virgo organiza la intensidad de Escorpio y este le aporta profundidad.", "malo": "La rigidez de Virgo choca con el secretismo y control de Escorpio." },
+      "sagitario": { "bueno": "Sagitario expande los horizontes de Virgo y este le da método.", "malo": "Sagitario es expansivo y caótico; Virgo busca orden y control." },
+      "capricornio": { "bueno": "Alianza de tierra perfecta: productividad, metas claras y solidez.", "malo": "Exceso de trabajo y falta de espontaneidad emocional." },
+      "acuario": { "bueno": "Intercambio de ideas lógicas y proyectos analíticos.", "malo": "Acuario rompe reglas y Virgo las necesita para vivir." },
+      "piscis": { "bueno": "Eje opuesto complementario: Virgo ordena el caos místico de Piscis.", "malo": "Virgo abruma a Piscis con detalles y Piscis frustra a Virgo con su desorden." }
+    }
+  },
+  "Libra": {
+    "signo": "Libra",
+    "elemento": "Aire",
+    "simbolo": "♎",
+    "cuerpo": "Riñones, zona lumbar, equilibrio interno y sistema excretor.",
+    "planeta": "Venus",
+    "casa": "Casa 7",
+    "mitologia": "Representa la balanza de Temis y de la propia Astrea, símbolo de la justicia divina, la armonía universal, la equidad y la necesidad vital del vínculo con el otro.",
+    "positivo": [
+      "Diplomacia, elegancia y refinado sentido de la estética.",
+      "Empatía profunda, capacidad de mediación y búsqueda de justicia.",
+      "Encantador, sociable y orientado a la cooperación."
+    ],
+    "negativo": [
+      "Indecisión crónica ante la necesidad de complacer a todos.",
+      "Dependencia vincular y miedo profundo a la soledad o al conflicto.",
+      "Superficialidad o tendencia a evitar las verdades incómodas por paz artificial."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Polaridad complementaria perfecta (el eje del deseo y el otro).", "malo": "Aries es directo y Libra duda demasiado buscando el equilibrio." },
+      "tauro": { "bueno": "Ambos regidos por Venus: búsqueda de belleza y armonía.", "malo": "Libra duda analíticamente y Tauro se pone terco." },
+      "geminis": { "bueno": "Conexión de aire perfecta; charlas interminables y buen gusto social.", "malo": "Indecisión compartida y dificultad para concretar en la materia." },
+      "cancer": { "bueno": "Ambos buscan la paz, la familia y la armonía vincular.", "malo": "Libra es mental y social; Cáncer es visceral y casero." },
+      "leo": { "bueno": "Elegancia, amor por el arte, vida social y romanticismo puro.", "malo": "Libra analiza demasiado y Leo actúa desde el aplauso." },
+      "virgo": { "bueno": "Ambos buscan la mejora y el refinamiento intelectual.", "malo": "Libra es indeciso y estético; Virgo es metódico y crítico." },
+      "libra": { "bueno": "Armonía estética, romance idílico y entendimiento social.", "malo": "Ninguno quiere tomar decisiones por miedo a generar conflicto." },
+      "escorpio": { "bueno": "Libra suaviza a Escorpio y Escorpio le da intensidad a Libra.", "malo": "La diplomacia de Libra choca con la franqueza tajante de Escorpio." },
+      "sagitario": { "bueno": "Alegria, sociabilidad, viajes y visión optimista compartida.", "malo": "Sagitario es directo y audaz; Libra mide demasiado las formas." },
+      "capricornio": { "bueno": "Elegancia social combinada con estructura y ambición.", "malo": "Capricornio es pragmático y frío; Libra busca el agrado y la forma." },
+      "acuario": { "bueno": "Conexión mental brillante, amor por la justicia social y libertad.", "malo": "Exceso de teoría abstracta y poca conexión con la tierra." },
+      "piscis": { "bueno": "Sensibilidad artística, romanticismo y bondad compartida.", "malo": "Falta absoluta de límites y tendencia a postergarse por el otro." }
+    }
+  },"Escorpio": {
+    "signo": "Escorpio",
+    "elemento": "Agua",
+    "simbolo": "♏",
+    "cuerpo": "Órganos reproductores, sistema excretor y genitales.",
+    "planeta": "Plutón",
+    "casa": "Casa 8",
+    "mitologia": "Representa al Escorpión gigante enviado para enfrentar a Orión, símbolo de la muerte simbólica, la regeneración profunda, el poder oculto y la capacidad de renacer desde las cenizas.",
+    "positivo": [
+      "Intensidad emocional, lealtad feroz y magnetismo poderoso.",
+      "Capacidad de transformación, resiliencia e intuición penetrante.",
+      "Profundidad psicológica y compromiso absoluto con la verdad."
+    ],
+    "negativo": [
+      "Rencor, tendencia a la venganza y memoria implacable de las ofensas.",
+      "Celos extremos, posesividad y necesidad de control sobre el otro.",
+      "Secretismo y tendencia a la desconfianza crónica."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Intensidad y poder de transformación profundo.", "malo": "Choques de poder y rencores acumulados." },
+      "tauro": { "bueno": "Eje de la materia y la transformación; atracción magnética.", "malo": "Choque de fuerzas inamovibles y rencores." },
+      "geminis": { "bueno": "Escorpio aporta profundidad y Géminis frescura mental.", "malo": "La liviandad de Géminis irrita la intensidad y celos de Escorpio." },
+      "cancer": { "bueno": "Fusión emocional profunda, intimidad y lealtad magnética.", "malo": "Apego intenso, celos y rencores bajo el agua." },
+      "leo": { "bueno": "Lealtad feroz, magnetismo y pasión intensa.", "malo": "Lucha de poder incesante y orgullo inflexible." },
+      "virgo": { "bueno": "Virgo organiza la intensidad de Escorpio y este le aporta profundidad.", "malo": "La rigidez de Virgo choca con el secretismo y control de Escorpio." },
+      "libra": { "bueno": "Libra suaviza a Escorpio y Escorpio le da intensidad a Libra.", "malo": "La diplomacia de Libra choca con la franqueza tajante de Escorpio." },
+      "escorpio": { "bueno": "Fusión total de almas, misterio y complicidad absoluta.", "malo": "Intensidad duplicada que puede volverse tóxica o destructiva." },
+      "sagitario": { "bueno": "Sagitario expande la visión de Escorpio y este le da foco.", "malo": "Sagitario busca libertad pública y Escorpio exige exclusividad total." },
+      "capricornio": { "bueno": "Alianza de poder, estrategia, ambición y lealtad a prueba de fuego.", "malo": "Falta de expresión emocional y tendencia al control mutuo." },
+      "acuario": { "bueno": "Desafío intelectual y transformación de estructuras mentales.", "malo": "Acuario es desapegado y libre; Escorpio es posesivo y profundo." },
+      "piscis": { "bueno": "Conexión mística, amor incondicional y profunda empatía psíquica.", "malo": "Absorción emocional excesiva y tendencia a perder los límites." }
+    }
+  },
+  "Sagitario": {
+    "signo": "Sagitario",
+    "elemento": "Fuego",
+    "simbolo": "♐",
+    "cuerpo": "Caderas, muslos, nervio ciático y sistema hepático.",
+    "planeta": "Júpiter",
+    "casa": "Casa 9",
+    "mitologia": "Representa al Centauro Quirón (o al centauro Croto), el maestro sabio y sanador, símbolo de la búsqueda de la verdad filosófica, la expansión de la conciencia y la flecha disparada hacia lo superior.",
+    "positivo": [
+      "Optimismo inquebrantable, entusiasmo y alegría de vivir.",
+      "Amor por la libertad, la aventura, los viajes y el conocimiento.",
+      "Generosidad, honestidad directa y visión de future amplia."
+    ],
+    "negativo": [
+      "Exceso de confianza, dogmatismo y tendencia a opinar sin filtro.",
+      "Inquietud crónica e incapacidad para sostener compromisos a largo plazo.",
+      "Exageración, dispersión y promesa de más de lo que puede cumplir."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Aventura, expansión, entusiasmo y alegría pura.", "malo": "Exceso de confianza y cero cable a tierra." },
+      "tauro": { "bueno": "Tauro ofrece refugio y Sagitario aporta expansión y optimismo.", "malo": "Sagitario busca libertad y Tauro busca arraigo." },
+      "geminis": { "bueno": "Eje del conocimiento y la aventura; aprendizaje mutuo constante.", "malo": "Sagitario busca verdades absolutas y Géminis relativiza todo." },
+      "cancer": { "bueno": "Sagitario trae alegría al hogar y Cáncer le da raíces.", "malo": "Sagitario necesita volar libre y Cáncer busca retenerlo." },
+      "leo": { "bueno": "Aventura, fuego puro, optimismo y diversión sin límites.", "malo": "Exceso de orgullo y cero atención a los detalles prácticos." },
+      "virgo": { "bueno": "Sagitario expande los horizontes de Virgo y este le da método.", "malo": "Sagitario es expansivo y caótico; Virgo busca orden y control." },
+      "libra": { "bueno": "Alegría, sociabilidad, viajes y visión optimista compartida.", "malo": "Sagitario es directo y audaz; Libra mide demasiado las formas." },
+      "escorpio": { "bueno": "Sagitario expande la visión de Escorpio y este le da foco.", "malo": "Sagitario busca libertad pública y Escorpio exige exclusividad total." },
+      "sagitario": { "bueno": "Fiesta infinita, viajes por el mundo y optimismo duplicado.", "malo": "Nadie se encarga de pagar las cuentas ni de poner orden." },
+      "capricornio": { "bueno": "Sagitario aporta visión inspiradora y Capricornio ejecución material.", "malo": "Capricornio es metódico y conservador; Sagitario es rupturista y libre." },
+      "acuario": { "bueno": "Libertad, ideales compartidos, proyectos vanguardistas y alegría.", "malo": "Falta de arraigo y tendencia a vivir en el plano abstracto." },
+      "piscis": { "bueno": "Búsqueda espiritual conjunta, fe y fe inagotable en el universo.", "malo": "Falta absoluta de realismo y tendencia a huir de los problemas." }
+    }
+  },"Capricornio": {
+    "signo": "Capricornio",
+    "elemento": "Tierra",
+    "simbolo": "♑",
+    "cuerpo": "Huesos, rodillas, articulaciones, dientes y piel.",
+    "planeta": "Saturno",
+    "casa": "Casa 10",
+    "mitologia": "Representa a la cabra Amaltea (o al dios Pan convertido en cabra marina), símbolo de la ambición, la superación de obstáculos escalando la montaña más alta, la estructura y la madurez.",
+    "positivo": [
+      "Ambición, disciplina y responsabilidad inquebrantable.",
+      "Gran capacidad de trabajo y construcción a largo plazo.",
+      "Prudencia, lealtad y un profundo sentido de la realidad."
+    ],
+    "negativo": [
+      "Exceso de rigor, frialdad emocional o pesimismo.",
+      "Tendencia a la rigidez inflexible y autoexigencia extrema.",
+      "Carga laboral desmedida que lleva al aislamiento."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Aries inicia los proyectos y Capricornio los materializa.", "malo": "La impaciencia de Aries choca contra la rigidez de Capricornio." },
+      "tauro": { "bueno": "Solidez material, metas claras y construcción a largo plazo.", "malo": "Rigidez excesiva y falta de flexibilidad emocional." },
+      "geminis": { "bueno": "Géminis aporta ideas innovadoras y Capricornio estructura.", "malo": "Capricornio ve a Géminis demasiado volátil y poco serio." },
+      "cancer": { "bueno": "Eje opuesto complementario perfecto: estructura y nutrición.", "malo": "La fría rigidez de Capricornio paraliza el mundo sensible de Cáncer." },
+      "leo": { "bueno": "Ambición, metas elevadas y respeto por la autoridad y el estatus.", "malo": "Capricornio es austero y reservado; Leo busca brillo y reconocimiento." },
+      "virgo": { "bueno": "Alianza de tierra perfecta: productividad, metas claras y solidez.", "malo": "Exceso de trabajo y falta de espontaneidad emocional." },
+      "libra": { "bueno": "Elegancia social combinada con estructura y ambición.", "malo": "Capricornio es pragmático y frío; Libra busca el agrado y la forma." },
+      "escorpio": { "bueno": "Alianza de poder, estrategia, ambición y lealtad a prueba de fuego.", "malo": "Falta de expresión emocional y tendencia al control mutuo." },
+      "sagitario": { "bueno": "Sagitario aporta visión inspiradora y Capricornio ejecución material.", "malo": "Capricornio es metódico y conservador; Sagitario es rupturista y libre." },
+      "capricornio": { "bueno": "Eficacia absoluta, respeto mutuo, metas cumplidas y solidez.", "malo": "Exceso de seriedad, frialdad y ausencia de disfrute." },
+      "acuario": { "bueno": "Capricornio materializa las ideas vanguardistas de Acuario.", "malo": "Capricornio defiende la tradición y Acuario busca romperla." },
+      "piscis": { "bueno": "Capricornio le da estructura y refugio seguro al mundo de Piscis.", "malo": "La dureza de Capricornio asusta y bloquea la sensibilidad de Piscis." }
+    }
+  },
+  "Acuario": {
+    "signo": "Acuario",
+    "elemento": "Aire",
+    "simbolo": "♒",
+    "cuerpo": "Pantorrillas, tobillos, sistema circulatorio e impulsos eléctricos.",
+    "planeta": "Urano",
+    "casa": "Casa 11",
+    "mitologia": "Representa a Ganímedes, el copero de los dioses elevado al cielo, símbolo de la innovación, el agua de la conciencia vertida para la humanidad, la rebeldía y el intelecto universal.",
+    "positivo": [
+      "Visión de futuro, originalidad y pensamiento vanguardista.",
+      "Amor por la libertad, la igualdad y los proyectos colectivos.",
+      "Independencia mental, inventiva y apertura humanitaria."
+    ],
+    "negativo": [
+      "Desapego emocional excesivo o frialdad en el trato personal.",
+      "Rebeldía caprichosa, excentricidad radical o terquedad mental.",
+      "Tendencia a vivir en la teoría abstracta desconectándose del cuerpo."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Innovación, rebeldía y proyectos vanguardistas.", "malo": "Aries busca inmediatez y Acuario se dispersa en el futuro." },
+      "tauro": { "bueno": "Acuario trae visión de futuro y Tauro seguridad terrenal.", "malo": "Acuario rompe esquemas y Tauro detesta los cambios bruscos." },
+      "geminis": { "bueno": "Sintonía mental total, originalidad y proyectos vanguardistas.", "malo": "Exceso de mundos abstractos y cero conexión emocional profunda." },
+      "cancer": { "bueno": "Acuario abre la mente de Cáncer a nuevas perspectivas.", "malo": "Acuario es desapegado y Cáncer necesita cercanía constante." },
+      "leo": { "bueno": "Oposición complementaria magnética: el individuo (Leo) y el colectivo (Acuario).", "malo": "Leo busca ser el centro y Acuario busca la igualdad general." },
+      "virgo": { "bueno": "Intercambio de ideas lógicas y proyectos analíticos.", "malo": "Acuario rompe reglas y Virgo las necesita para vivir." },
+      "libra": { "bueno": "Conexión mental brillante, amor por la justicia social y libertad.", "malo": "Exceso de teoría abstracta y poca conexión con la tierra." },
+      "escorpio": { "bueno": "Desafío intelectual y transformación de estructuras mentales.", "malo": "Acuario es desapegado y libre; Escorpio es posesivo y profundo." },
+      "sagitario": { "bueno": "Libertad, ideales compartidos, proyectos vanguardistas y alegría.", "malo": "Falta de arraigo y tendencia a vivir en el plano abstracto." },
+      "capricornio": { "bueno": "Capricornio materializa las ideas vanguardistas de Acuario.", "malo": "Capricornio defiende la tradición y Acuario busca romperla." },
+      "acuario": { "bueno": "Revolución compartida, genialidad y libertad absoluta.", "malo": "Falta total de cable a tierra, distancia emocional y caos." },
+      "piscis": { "bueno": "Imaginación cósmica, inventiva y sensibilidad humanitaria.", "malo": "Utopías impracticables y desconexión absoluta de la realidad." }
+    }
+  },
+  "Piscis": {
+    "signo": "Piscis",
+    "elemento": "Agua",
+    "simbolo": "♓",
+    "cuerpo": "Pies, sistema linfático e inmunológico.",
+    "planeta": "Neptuno",
+    "casa": "Casa 12",
+    "mitologia": "Representa a Afrodita y a su hijo Eros transformados en peces para escapar del monstruo Tifón, unidos por un lazo; símbolo de la entrega mística, el amor incondicional y el océano inconsciente.",
+    "positivo": [
+      "Empatía universal, compasión infinita e imaginación artística.",
+      "Profunda conexión espiritual, intuición y sensibilidad mística.",
+      "Capacidad de sacrificio, entrega amorosa y bondad desinteresada."
+    ],
+    "negativo": [
+      "Tendencia a la evasión de la realidad, victimismo o confusión crónica.",
+      "Falta de límites claros y absorción de las energías de su entorno.",
+      "Propensión a caer en autoengaños, ilusiones falsas o adicciones."
+    ],
+    "compatibilidad": {
+      "aries": { "bueno": "Aries le da fuerza y dirección al mundo interno de Piscis.", "malo": "La brusquedad de Aries abruma la sensibilidad pisciana." },
+      "tauro": { "bueno": "Tauro materializa los sueños y la sensibilidad de Piscis.", "malo": "La lentitud de Tauro puede frustrar la fluidez pisciana." },
+      "geminis": { "bueno": "Imaginación desbordante y sensibilidad artística conectadas.", "malo": "La lógica de Géminis no entiende el caos emocional de Piscis." },
+      "cancer": { "bueno": "Conexión de agua mágica, intuitiva y sumamente empática.", "malo": "Vivir en una burbuja sin cable a tierra ni límites claros." },
+      "leo": { "bueno": "Leo protege con calidez el mundo imaginativo de Piscis.", "malo": "La vulnerabilidad de Piscis choca con la exigencia de fuerza de Leo." },
+      "virgo": { "bueno": "Eje opuesto complementario: Virgo ordena el caos místico de Piscis.", "malo": "Virgo abruma a Piscis con detalles y Piscis frustra a Virgo con su desorden." },
+      "libra": { "bueno": "Sensibilidad artística, romanticismo y bondad compartida.", "malo": "Falta absoluta de límites y tendencia a postergarse por el otro." },
+      "escorpio": { "bueno": "Conexión mística, amor incondicional y profunda empatía psíquica.", "malo": "Absorción emocional excesiva y tendencia a perder los límites." },
+      "sagitario": { "bueno": "Búsqueda espiritual conjunta, fe y esperanza inagotable en el universo.", "malo": "Falta absoluta de realismo y tendencia a huir de los problemas." },
+      "capricornio": { "bueno": "Capricornio le da estructura y refugio seguro al mundo de Piscis.", "malo": "La dureza de Capricornio asusta y bloquea la sensibilidad de Piscis." },
+      "acuario": { "bueno": "Imaginación cósmica, inventiva y sensibilidad humanitaria.", "malo": "Utopías impracticables y desconexión absoluta de la realidad." },
+      "piscis": { "bueno": "Fusión de almas, romance idealizado, arte y espiritualidad pura.", "malo": "Huir juntos de la realidad y perderse en el caos emocional." }
+    }
+  }
+}
