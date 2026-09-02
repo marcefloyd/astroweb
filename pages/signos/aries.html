@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aries ♈︎ - Vibrando Acuario</title>
 
-    <link rel="icon" href="../assets/zodiaco.png">
+    <link rel="icon" href="../../assets/zodiaco.png">
 
-    <!-- CSS Propios y de Elemento -->
-    <link rel="stylesheet" href="css/fuego.css">
+    <!-- CSS Propios de Signos -->
+    <link rel="stylesheet" href="../../css/gradosenplanetas.css">
+    <link rel="stylesheet" href="../../css/elementos.css"> 
     
     <!-- 🌐 Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body data-signo="aries">
+
+  <!-- 🌌 CANVAS --> 
+  <canvas id="estrellas"></canvas>
 
   <!-- 🎥 VIDEO -->
   <video autoplay muted loop playsinline preload="auto" id="fondo-video">
-    <source src="assets/fuego1.mp4" type="video/mp4">
+    <source src="assets/fuego2.mp4" type="video/mp4">
     Tu navegador no soporta videos de fondo.
   </video>
 
@@ -87,28 +92,114 @@
 
   <!-- 🗂️ CONTENIDO DINÁMICO DEL SIGNO -->
   <main class="signo-container" style="padding-top: 120px; max-width: 900px; margin: 0 auto; padding-left: 20px; padding-right: 20px;">
+      
+      <!-- ♈ ENCABEZADO -->
       <div class="signo-titulo" style="text-align: center; margin-bottom: 40px;">
-          <span class="simbolo-signo">♈</span>
+          <span class="simbolo-signo">♈︎</span>
           <h1 class="titulo-signo">Aries</h1>
-          <p class="elemento-signo"></p>
-          <p class="planeta-signo"></p>
-          <p class="casa-signo"></p>
+          <p class="elemento-signo">Elemento: Fuego</p>
+          <p class="planeta-signo">Planeta regente: Marte</p>
+          <p class="casa-signo">Casa astrológica: Casa 1</p>
       </div>
 
-      <div class="signo-card" style="margin-bottom: 30px;">
-          <h3>Mitología y Esencia</h3>
-          <p class="mitologia-signo"></p>
-          <p style="margin-top: 15px;"><strong>Parte del cuerpo asociada:</strong> <span class="cuerpo-signo"></span></p>
+      <!-- 📖 MITOLOGÍA Y CUERPO -->
+      <div class="signo-card" style="margin-bottom: 30px; background: rgba(15, 15, 25, 0.85); border: 1px solid rgba(255, 204, 0, 0.35); border-radius: 16px; padding: 30px; backdrop-filter: blur(12px);">
+          <h3 style="color: #ffcc00; border-bottom: 1px solid rgba(255, 204, 0, 0.2); padding-bottom: 8px; margin-bottom: 15px;">Mitología y Esencia</h3>
+          <p class="mitologia-signo">Representa el vellocino de oro y al carnero alado Crisómalo de la mitología griega, símbolo del heroísmo, la empresa audaz y el sacrificio que abre nuevos caminos.</p>
+          <p style="margin-top: 15px;"><strong>Parte del cuerpo asociada:</strong> <span class="cuerpo-signo">Cabeza, cerebro, cráneo y rostro.</span></p>
       </div>
 
+      <!-- ✨ TARJETAS DE LUZ Y SOMBRA -->
       <div class="tarjetas-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px;">
-          <div class="signo-card">
-              <h3>Luz (Aspectos Positivos)</h3>
-              <ul class="lista-positiva"></ul>
+          
+          <!-- LUZ -->
+          <div class="signo-card" style="background: rgba(15, 15, 25, 0.85); border: 1px solid rgba(255, 204, 0, 0.35); border-radius: 16px; padding: 30px; backdrop-filter: blur(12px);">
+              <h3 style="color: #ffcc00; border-bottom: 1px solid rgba(255, 204, 0, 0.2); padding-bottom: 8px; margin-bottom: 15px;">Luz (Aspectos Positivos)</h3>
+              <ul class="lista-positiva" style="list-style: none; padding: 0;">
+                  <li style="position: relative; padding-left: 20px; margin-bottom: 10px;">Coraje y valentía para iniciar.</li>
+                  <li style="position: relative; padding-left: 20px; margin-bottom: 10px;">Liderazgo natural y pionero.</li>
+                  <li style="position: relative; padding-left: 20px; margin-bottom: 10px;">Entusiasmo vital y franqueza.</li>
+              </ul>
           </div>
-          <div class="signo-card">
-              <h3>Sombra (Aspectos Negativos)</h3>
-              <ul class="lista-negativa"></ul>
+
+          <!-- SOMBRA -->
+          <div class="signo-card" style="background: rgba(15, 15, 25, 0.85); border: 1px solid rgba(255, 204, 0, 0.35); border-radius: 16px; padding: 30px; backdrop-filter: blur(12px);">
+              <h3 style="color: #ffcc00; border-bottom: 1px solid rgba(255, 204, 0, 0.2); padding-bottom: 8px; margin-bottom: 15px;">Sombra (Aspectos Negativos)</h3>
+              <ul class="lista-negativa" style="list-style: none; padding: 0;">
+                  <li style="position: relative; padding-left: 20px; margin-bottom: 10px;">Impulsividad y reactividad.</li>
+                  <li style="position: relative; padding-left: 20px; margin-bottom: 10px;">Impaciencia extrema.</li>
+                  <li style="position: relative; padding-left: 20px; margin-bottom: 10px;">Ego competitivo y tendencia a la agresividad.</li>
+              </ul>
+          </div>
+
+      </div>
+
+      <!-- 💫 COMPATIBILIDAD ASTROLÓGICA -->
+      <div class="signo-card" style="margin-bottom: 40px; background: rgba(15, 15, 25, 0.85); border: 1px solid rgba(255, 204, 0, 0.35); border-radius: 16px; padding: 30px; backdrop-filter: blur(12px);">
+          <h3 style="color: #ffcc00; border-bottom: 1px solid rgba(255, 204, 0, 0.2); padding-bottom: 8px; margin-bottom: 20px; text-align: center;">Compatibilidad con otros Signos</h3>
+          
+          <div class="compatibilidad-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px;">
+              
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Aries ♈︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Energía imparable, aventura y pasión directa.<br>⚠️ Competencia constante y choques de carácter explosivos.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Tauro ♉︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Tauro aporta estabilidad y Aries dinamismo.<br>⚠️ La prisa de Aries choca con la paciencia de Tauro.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Géminis ♊︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Estímulo mental mutuo, diversión y proyectos rápidos.<br>⚠️ Inconstancia y dispersión en los compromisos.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Cáncer ♋︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Aries protege y Cáncer aporta refugio emocional.<br>⚠️ La impulsividad verbal de Aries hiere la sensibilidad de Cáncer.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Leo ♌︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Fuego puro: pasión, liderazgo y brillantez compartida.<br>⚠️ Choques de egos por quién se lleva el protagonismo.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Virgo ♍︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Virgo organiza las ideas audaces de Aries.<br>⚠️ El vértigo de Aries exaspera la prudencia de Virgo.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Libra ♎︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Eje opuesto complementario: acción y diplomacia.<br>⚠️ Aries es directo y egoísta; Libra busca complacer y dudar.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Escorpio ♏︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Intensidad, magnetismo y potencia sexual o creativa.<br>⚠️ Luchas de poder y rencores acumulados.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Sagitario ♐︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Gran aventura, optimismo y complicidad de fuego.<br>⚠️ Falta de cable a tierra y exceso de confianza.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Capricornio ♑︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Empuje de Aries con la estrategia y estructura de Capricornio.<br>⚠️ La impaciencia de Aries choca con los tiempos lentos de Capricornio.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Acuario ♒︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Originalidad, proyectos innovadores y libertad mutua.<br>⚠️ Acuario es mental y distante; Aries quiere acción inmediata.</p>
+              </div>
+
+              <div style="background: rgba(25, 25, 40, 0.6); padding: 12px 15px; border-radius: 10px; border-left: 3px solid #ffcc00;">
+                  <strong style="color: #ffe680;">Piscis ♓︎:</strong>
+                  <p style="font-size: 0.9rem; margin-top: 5px; color: #d0d0d5;">✨ Aries moviliza la energía mística de Piscis.<br>⚠️ La agresividad de Aries puede apagar la delicadeza pisciana.</p>
+              </div>
+
           </div>
       </div>
   </main>
@@ -165,7 +256,7 @@
     </div>
   </footer>
 
-  <!-- ⚡ Globito Flotante Estelar (Cotizador) -->
+  <!-- ⚡ Globito Flotante Cotizador -->
   <a href="../presupuesto.html" class="globito-cotizador" title="Cotizador Cósmico">
       <i class="bi bi-magic"></i>
       <span class="tooltip-cotizador">¡Cotizá tu servicio!</span>
@@ -237,8 +328,8 @@
       }
   </style>
 
-  <!-- Scripts: Tu JS global de la página y el script que lee el JSON -->
-  <script src="js/script.js"></script>
-  <script src="js/signos.js"></script>
+  <!-- Script Global -->
+  <script src="../../js/script.js"></script>
+  <script src="../../js/signos.js"></script>
 </body>
 </html>
