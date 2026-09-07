@@ -57,15 +57,6 @@ async function generarInterpretacion() {
 
       <hr>
 
-      <h3>📚 Autores</h3>
-      <p>
-        ${Object.entries(grado.autores)
-          .map(([autor, texto]) => `<b>${autor}:</b> ${texto}`)
-          .join("<br>")}
-      </p>
-
-      <hr>
-
       <h3>🔍 Análisis final</h3>
       <p style="white-space: pre-line;">
         ${grado.analisis_final}

@@ -28,7 +28,7 @@ async function cargarGrados() {
   .trim(),
 
       palabras_clave: Array.isArray(g.palabras_clave) ? g.palabras_clave : [],
-      simbolos_clave: Array.isArray(g.simbolos_clave) ? g.simbolos_clave : [],
+     
 
       interpretacion: g.interpretacion || {},
       polaridad: {
@@ -41,7 +41,7 @@ async function cargarGrados() {
           : (g.polaridad?.sombra ? [g.polaridad.sombra] : []),
       },
 
-      autores: (g.autores && typeof g.autores === "object") ? g.autores : {},
+  
     }));
 
     console.log('✅ Grados cargados:', gradosData.length);
@@ -198,16 +198,6 @@ return `<b>${k}:</b> ${v}`;
 
     <h3>🔮 Mensaje evolutivo</h3>
     <p>${safe(resultado.mensaje_evolutivo)}</p>
-
-    <hr>
-
-    <h3>🜂 Simbolos clave</h3>
-    <p>${safe(resultado.simbolos_clave)}</p>
-
-    <hr>
-
-    <h3>📚 Autores</h3>
-    ${objToHTML(resultado.autores)}
 
     <hr>
 
